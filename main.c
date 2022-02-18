@@ -1,8 +1,9 @@
        #include <stdio.h>
        #include <stdlib.h>
        #include <dlfcn.h>
-       #include <gnu/lib-names.h>  /* Defines LIBM_SO (which will be a
-                                      string such as "libm.so.6") */
+       //#include <gnu/lib-names.h>  /* Defines LIBM_SO (which will be a
+       //                               string such as "libm.so.6") */
+       #define LIBM_SO libm.so
        int
        main(int argc, char *argv[])
        {
